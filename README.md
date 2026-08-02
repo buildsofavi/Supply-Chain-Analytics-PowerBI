@@ -172,7 +172,7 @@ Supply-Chain-Analytics-PowerBI
 
 ### Executive Overview
 
-![Executive Overview](Images/2_Executive_Dashboard.png)
+![Executive Overview](Images/2_Executive_Overview.png)
 
 ### Supplier Performance
 
@@ -184,7 +184,7 @@ Supply-Chain-Analytics-PowerBI
 
 ### Transportation Analytics
 
-![Transportation Analytics](Images/5_Transportation_Analytics.png)
+![Transportation Analytics](Images/5_Transport_Analytics.png)
 
 ### Procurement Analytics
 
