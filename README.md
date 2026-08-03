@@ -1,135 +1,188 @@
 # 📊 Supply Chain Analytics Dashboard
 
-An end-to-end Business Intelligence solution built in **Microsoft Power BI** to analyze procurement, supplier performance, inventory health, demand forecasting, and transportation operations for a global medical device manufacturing company.
+An end-to-end Business Intelligence solution built using **Microsoft Power BI** to analyze procurement, supplier performance, inventory health, demand planning, and transportation operations for a **simulated global medical device manufacturing company**.
+
+This project demonstrates practical skills in **data modeling, DAX, dashboard development, and business analytics**, with complete project documentation included.
 
 ---
 
 # 📌 Project Overview
 
-This project demonstrates the development of a complete Supply Chain Analytics solution using Power BI. The dashboard transforms raw operational data into interactive business insights that support procurement managers, supply chain analysts, and business leaders in making informed decisions.
+Organizations generate vast amounts of supply chain data across procurement, inventory, logistics, and supplier operations. Without centralized reporting, business users often rely on multiple spreadsheets and disconnected reports, making decision-making slow and reactive.
 
-The solution follows a star schema data model and uses DAX measures, Power Query transformations, and interactive visualizations to monitor key supply chain metrics.
-
----
-
-# 🎯 Business Objectives
-
-This dashboard was designed to answer questions such as:
-
-- Which suppliers account for the highest procurement spend?
-- How well are suppliers performing?
-- Which materials require replenishment?
-- How accurate is demand forecasting?
-- Which transportation modes generate the highest freight costs?
-- Where should management focus operational improvements?
+This project consolidates multiple operational datasets into a single interactive Power BI solution that enables users to monitor key performance indicators and make data-driven decisions.
 
 ---
 
-# 📈 Dashboard Pages
+# 🎯 Business Problem
+
+The dashboard was designed to answer key business questions across the supply chain.
+
+## Procurement
+
+- How much did we spend this year?
+- Which supplier received the highest spend?
+- Which plant purchases the most?
+- Which buyer manages the most purchase orders?
+- What is the monthly procurement trend?
+
+## Supplier Performance
+
+- Which supplier delivers late?
+- Which supplier has the lowest Fill Rate?
+- What is the average delivery delay?
+- How do suppliers rank overall?
+
+## Inventory
+
+- What is the current inventory value?
+- Which materials are below Safety Stock?
+- Which materials are overstocked?
+- How is inventory distributed across warehouses?
+
+## Demand Planning
+
+- What is the forecast accuracy?
+- Which materials have the largest forecast errors?
+- What is the monthly demand trend?
+
+## Logistics
+
+- What is the freight cost by carrier?
+- What is the freight cost by transport mode?
+- What is the average freight cost per shipment?
+
+---
+
+# 💡 Solution
+
+The solution integrates procurement, supplier, inventory, demand planning, and logistics data into a centralized Power BI dashboard.
+
+The report follows a **Star Schema** data model and leverages **Power Query** for data transformation and **DAX** for KPI calculations, enabling interactive analysis through slicers, KPI cards, trend charts, matrices, and executive insights.
+
+---
+
+# 📊 Dashboard Pages
 
 ## 🏠 Landing Page
 
-Provides an entry point into the report with navigation buttons to each analytical dashboard.
+Navigation page providing quick access to each dashboard.
 
 ---
 
-## 📊 Executive Overview
+## 📈 Executive Overview
 
-High-level summary of supply chain performance including:
+High-level overview of supply chain performance including:
 
 - Total Procurement Spend
-- Total Purchase Orders
-- Average Fill Rate
+- Purchase Orders
+- Fill Rate
 - On-Time Delivery
-- Freight Cost
+- Delivery Delay
 - Executive KPI Summary
 
 ---
 
 ## 🏭 Supplier Performance
 
-Evaluates supplier performance using metrics such as:
+Analyzes supplier efficiency using:
 
-- Procurement Spend
 - Supplier Spend %
 - Fill Rate
 - On-Time Delivery %
-- Average Delivery Delay
+- Delivery Delay
 - Supplier Performance Score
-
-Includes supplier ranking and executive insights.
+- Supplier Ranking
 
 ---
 
 ## 📦 Inventory Health
 
-Monitors inventory across warehouses including:
+Monitors inventory across warehouses:
 
 - Inventory Value
 - Stock Status
-- Safety Stock Analysis
+- Materials Below Safety Stock
+- Warehouse Distribution
 - Forecast vs Actual Demand
-- Warehouse Inventory Distribution
 
 ---
 
 ## 🚚 Transportation Analytics
 
-Provides visibility into logistics performance through:
+Provides logistics insights including:
 
+- Freight Cost by Carrier
 - Freight Cost by Transport Mode
 - Shipment Distribution
-- Carrier Performance
-- Freight Cost Analysis
+- Average Freight Cost
 
 ---
 
 ## 📊 Procurement Analytics
 
-Advanced procurement insights including:
+Procurement-focused analysis featuring:
 
-- Supplier Ranking
+- Supplier Spend
+- Procurement Trends
+- Supplier Concentration
 - Executive Insight Card
-- Supplier Spend Treemap
-- Procurement Spend by Country
-- Supplier Performance Scatter Analysis
+- Supplier Performance Matrix
 
 ---
 
-# 📊 Key Performance Indicators (KPIs)
+# 📷 Dashboard Screenshots
 
-| KPI | Business Purpose |
-|------|------------------|
-| Total Spend | Total procurement expenditure |
-| Total Purchase Orders | Procurement activity volume |
-| Fill Rate | Supplier order fulfilment performance |
-| On-Time Delivery | Supplier delivery reliability |
-| Average Delivery Delay | Measures supplier delays |
-| Supplier Spend % | Supplier dependency analysis |
-| Performance Score | Overall supplier evaluation |
-| Inventory Value | Total inventory investment |
-| Forecast Accuracy | Demand planning effectiveness |
-| Freight Cost | Transportation expenditure |
+## Landing Page
+
+![Landing Page](Images/Landing_Page.png)
 
 ---
 
-# 🗂️ Data Model
+## Executive Overview
 
-The dashboard follows a **Star Schema** design.
+![Executive Overview](Images/2_Executive_Overview.png)
 
-Fact Tables
+---
 
-- Purchase Orders
-- Inventory
-- Shipments
-- Demand Forecast
+## Supplier Performance
 
-Dimension Tables
+![Supplier Performance](Images/3_Supplier_Performance.png)
 
-- Supplier Master
-- Material Master
+---
 
-Relationships were created using primary and foreign keys to ensure efficient filtering and reporting.
+## Inventory Health
+
+![Inventory Health](Images/4_Inventory_Health.png)
+
+---
+
+## Transportation Analytics
+
+![Transportation Analytics](Images/5_Transportat_Analytics.png)
+
+---
+
+## Procurement Analytics
+
+![Procurement Analytics](Images/6_Procurement_Analytics.png)
+
+---
+
+# 📊 Key Performance Indicators
+
+- Total Spend
+- Total Purchase Orders
+- Fill Rate
+- On-Time Delivery %
+- Average Delivery Delay
+- Supplier Spend %
+- Supplier Performance Score
+- Inventory Value
+- Forecast Accuracy
+- Total Freight Cost
+- Average Freight Cost
+- Cost per Shipment
 
 ---
 
@@ -139,14 +192,32 @@ Relationships were created using primary and foreign keys to ensure efficient fi
 - Power Query
 - DAX (Data Analysis Expressions)
 - Data Modeling
-- Excel / CSV
 - Star Schema Design
+- Excel / CSV
+- GitHub
 
 ---
 
-# 📁 Repository Structure
+# 🗂️ Data Model
 
-```
+The solution follows a **Star Schema** design consisting of:
+
+### Fact Tables
+
+- Purchase Orders
+- Inventory
+- Demand Forecast
+- Shipments
+
+### Dimension Tables
+
+- Supplier Master
+- Material Master
+
+The model enables efficient filtering, simplified reporting, and scalable dashboard development.
+
+---
+
 # 📁 Repository Structure
 
 ```text
@@ -164,89 +235,62 @@ Supply-Chain-Analytics-PowerBI
 │   └── Shipments.csv
 │
 ├── Documentation
-│   ├── Supply_Chain_Analytics_Business_Case.pdf
-│   ├── Supply_Chain_Analytics_Problem_Solutiont.pdf
-│   └── Supply Chain Analytics - Documentation.xlsx
+│   ├── Business_Case.pdf
+│   ├── Problem_Solution_Document.pdf
+│   └── Supply_Chain_Analytics_Project_Documentation.xlsx
 │
 ├── Images
-│   ├── 1_Landing_Page.png
-│   ├── 2_Executive_Overview.png
-│   ├── 3_Supplier_Performance.png
-│   ├── 4_Inventory_Health.png
-│   ├── 5_Transportation_Analytics.png
-│   └── 6_Procurement_Analytics.png
+│   ├── Landing_Page.png
+│   ├── Executive_Overview.png
+│   ├── Supplier_Performance.png
+│   ├── Inventory_Health.png
+│   ├── Transportation_Analytics.png
+│   └── Procurement_Analytics.png
 │
 ├── LICENSE
 └── README.md
 ```
-```
 
 ---
 
-## 📷 Dashboard Screenshots
+# 📚 Project Documentation
 
-### Executive Overview
+The repository includes detailed project documentation:
 
-![Executive Overview](Images/2_Executive_Overview.png)
+- 📄 Business Case
+- 📄 Problem & Solution Document
+- 📊 Project Documentation Workbook
 
-### Supplier Performance
+The documentation workbook contains:
 
-![Supplier Performance](Images/3_Supplier_Performance.png)
+- Project Overview
+- Data Dictionary
+- Relationship Documentation
+- DAX Library
+- KPI Catalog
+- Dashboard Pages
 
-### Inventory Health
-
-![Inventory Health](Images/4_Inventory_Health.png)
-
-### Transportation Analytics
-
-![Transportation Analytics](Images/5_Transport_Analytics.png)
-
-### Procurement Analytics
-
-![Procurement Analytics](Images/6_Procurement_Analytics.png)
-
-
-
-### Dashboard Pages
-
-- Landing Page
-- Executive Overview
-- Supplier Performance
-- Inventory Health
-- Transportation Analytics
-- Procurement Analytics
-
----
-
-# 💡 Business Insights Generated
-
-This dashboard enables decision-makers to:
-
-- Identify high-spend suppliers
-- Monitor supplier reliability
-- Detect inventory shortages
-- Compare forecast against actual demand
-- Analyse logistics costs
-- Evaluate procurement performance
-- Support data-driven operational decisions
+These documents describe the business context, data model, KPIs, DAX measures, and dashboard design decisions.
 
 ---
 
 # 🚀 Skills Demonstrated
 
-This project demonstrates practical experience with:
-
-- Data Cleaning
-- Data Modelling
+- Business Intelligence
+- Data Modeling
 - Star Schema Design
+- Power Query
 - DAX Measures
 - KPI Development
-- Interactive Dashboard Design
-- Business Intelligence Reporting
-- Supply Chain Analytics
+- Dashboard Design
+- Executive Reporting
 - Procurement Analytics
-- Inventory Analysis
-- Logistics Analytics
+- Supplier Performance Analysis
+- Inventory Analytics
+- Demand Planning Analytics
+- Transportation Analytics
+- Data Visualization
+- GitHub Documentation
 
 ---
 
@@ -254,12 +298,14 @@ This project demonstrates practical experience with:
 
 Potential improvements include:
 
-- Time Intelligence (YTD, MTD, YoY)
+- Time Intelligence (YTD, MTD, QoQ, YoY)
 - Dynamic Top N Analysis
-- Pareto (80/20) Analysis
+- Pareto (80/20) Supplier Analysis
 - Row-Level Security (RLS)
-- Automated Data Refresh
 - Power BI Service Deployment
+- Automated Data Refresh
+- Supplier Risk Prediction
+- Predictive Inventory Planning
 
 ---
 
@@ -267,8 +313,12 @@ Potential improvements include:
 
 **Avinash Kamath**
 
-GitHub: **buildsofavi**
+📍 MSc Automotive Engineering – Loughborough University
+
+🔗 GitHub: **buildsofavi**
 
 ---
 
-## ⭐ If you found this project interesting, feel free to explore the repository and connect with me.
+## Disclaimer
+
+This project was developed as a personal portfolio project using a **simulated supply chain dataset**. The business scenario is inspired by real-world supply chain operations in the medical device manufacturing industry and is intended solely to demonstrate Business Intelligence, data modeling, and Power BI dashboard development skills.
