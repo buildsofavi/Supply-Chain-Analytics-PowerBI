@@ -237,6 +237,9 @@ Supply-Chain-Analytics-PowerBI
 ├── Documentation
 │   ├── Business_Case.pdf
 │   ├── Problem_Solution_Document.pdf
+│   ├── SAP_Procurement_Flow.pdf
+│   ├── Supplier_Corrective_Action_Plan.pdf
+│   ├── Root_Cause_Analysis.pdf
 │   └── Supply_Chain_Analytics_Project_Documentation.xlsx
 │
 ├── Images
