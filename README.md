@@ -164,17 +164,17 @@ Supply-Chain-Analytics-PowerBI
 │   └── Shipments.csv
 │
 ├── Documentation
-│   ├── Business_Case.pdf
-│   ├── Problem_Solution_Document.pdf
-│   └── Supply_Chain_Analytics_Project_Documentation.xlsx
+│   ├── Supply_Chain_Analytics_Business_Case.pdf
+│   ├── Supply_Chain_Analytics_Problem_Solutiont.pdf
+│   └── Supply Chain Analytics - Documentation.xlsx
 │
 ├── Images
-│   ├── Landing_Page.png
-│   ├── Executive_Overview.png
-│   ├── Supplier_Performance.png
-│   ├── Inventory_Health.png
-│   ├── Transportation_Analytics.png
-│   └── Procurement_Analytics.png
+│   ├── 1_Landing_Page.png
+│   ├── 2_Executive_Overview.png
+│   ├── 3_Supplier_Performance.png
+│   ├── 4_Inventory_Health.png
+│   ├── 5_Transportation_Analytics.png
+│   └── 6_Procurement_Analytics.png
 │
 ├── LICENSE
 └── README.md
