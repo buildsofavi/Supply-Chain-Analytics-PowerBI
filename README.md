@@ -135,7 +135,7 @@ Procurement-focused analysis featuring:
 
 ## Landing Page
 
-![Landing Page](Images/Landing_Page.png)
+![Landing Page](Images/1_Landing_Page.png)
 
 ---
 
