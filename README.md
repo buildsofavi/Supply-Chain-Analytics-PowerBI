@@ -159,7 +159,7 @@ Procurement-focused analysis featuring:
 
 ## Transportation Analytics
 
-![Transportation Analytics](Images/5_Transportat_Analytics.png)
+![Transportation Analytics](Images/5_Transport_Analytics.png)
 
 ---
 
