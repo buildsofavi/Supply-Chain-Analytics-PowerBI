@@ -147,6 +147,9 @@ Relationships were created using primary and foreign keys to ensure efficient fi
 # 📁 Repository Structure
 
 ```
+# 📁 Repository Structure
+
+```text
 Supply-Chain-Analytics-PowerBI
 │
 ├── Dashboard
@@ -160,10 +163,22 @@ Supply-Chain-Analytics-PowerBI
 │   ├── Demand_Forecast.csv
 │   └── Shipments.csv
 │
+├── Documentation
+│   ├── Business_Case.pdf
+│   ├── Problem_Solution_Document.pdf
+│   └── Supply_Chain_Analytics_Project_Documentation.xlsx
+│
 ├── Images
+│   ├── Landing_Page.png
+│   ├── Executive_Overview.png
+│   ├── Supplier_Performance.png
+│   ├── Inventory_Health.png
+│   ├── Transportation_Analytics.png
+│   └── Procurement_Analytics.png
 │
 ├── LICENSE
 └── README.md
+```
 ```
 
 ---
